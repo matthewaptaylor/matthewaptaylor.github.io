@@ -4,80 +4,156 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	
-	<title>Mapped Projects</title>
+	<title>Home - matthewaptaylor.github.io</title>
 	
-	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/assets/bootstrap-4.0.0-beta-dist/css/bootstrap.min.css">
 </head>
 <body>
 	<div class="container-fluid">
-		<div class="row bg-inverse">
+		<div class="row bg-dark" id="body">
 			<div class="col">
-				<br />
-				<h1 class="display-4 text-center text-white">Mapped Projects</h1>
-				<h3 class="text-center"><small class="text-muted">By matthewaptaylor</small></h3>
-				<br class="hidden-sm-up" />
-			</div>
-		</div>
-		<div class="row bg-inverse">
-			<div class="col">
-				<div class="container">
-					<nav class="navbar navbar-toggleable navbar-inverse">
-						<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-							<span class="navbar-toggler-icon"></span>
-						</button>
-						<a class="navbar-brand hidden-sm-up" href="#">Navigation</a>
-						<div class="collapse navbar-collapse" id="navbarText">
-							<ul class="navbar-nav mr-auto">
-								<li class="nav-item active">
-									<a class="nav-link" href="//matthewaptaylor.github.io/">Projects</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="//matthewaptaylor.github.io/about">About</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="//matthewaptaylor.github.io/contact">Contact</a>
-								</li>
-							</ul>
-							<span class="navbar-text">
-									<a class="github-button" href="//github.com/matthewaptaylor" data-style="mega" data-show-count="true" aria-label="Follow @matthewaptaylor on GitHub">Follow @matthewaptaylor</a>
-							</span>
+				<br>
+				<a href="#body" style="user-select:none;text-decoration:none;">
+					<h1 class="display-4 text-center text-light">matthewaptaylor.github.io</h1>
+					<h4 class="text-center text-secondary">By Matthew Taylor</h4>
+				</a>
+				<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+					<a class="navbar-brand" href="#body">Home</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+						<div class="navbar-nav">
+							<a class="nav-item nav-link" href="#projects">Projects <span class="sr-only">(current)</span></a>
+							<a class="nav-item nav-link" href="#about">About</a>
 						</div>
-					</nav>
-				</div>
+					</div>
+					<span class="navbar-text">
+						<a class="github-button" href="//github.com/matthewaptaylor" data-style="mega" data-show-count="true" aria-label="Follow @matthewaptaylor on GitHub">Follow @matthewaptaylor</a>
+					</span>
+				</nav>
 			</div>
 		</div>
-	</div>
-	<div class="container">
-		<div class="row">
+		<div class="row bg-light" id="projects">
 			<div class="col">
-				<div class="card mx-auto" style="width: 320px;margin-top: 20px;">
-					<img class="card-img-top" src="assets/img/MappedVideo.png" alt="Mapped Video">
-					<div class="card-block">
-						<h4 class="card-title">Mapped Video</h4>
-						<p class="card-text">A clean, open source HTML5 video player.</p>
-						<div class="btn-group-vertical" role="group" style="width: 100%;">
-							<a href="//matthewaptaylor.github.io/MappedVideo" class="btn btn-primary">Project page</a>
-							<a href="//github.com/matthewaptaylor/MappedVideo" class="btn btn-outline-primary">GitHub page</a>
+				<div class="container d-flex justify-content-center flex-wrap">
+					<div class="card" style="width:318px;margin:10px;">
+						<img class="card-img-top" src="/assets/img/MappedVideo.png" alt="Video player screenshot">
+						<div class="card-body">
+							<h4 class="card-title">Mapped Video</h4>
+							<p class="card-text">A clean, open source HTML5 video player.</p>
+							<div class="btn-group-vertical btn-block">
+								<a href="#" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#pro1Modal">View Project</a>
+								<a href="//github.com/matthewaptaylor/MappedVideo" class="btn btn-outline-primary btn-sm">Github page</a>
+							</div>
+						</div>
+					</div>
+					<div id="pro1Modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="pro1ModalLabel" aria-hidden="true">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="pro1ModalLabel">Mapped Video</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true" style="cursor:pointer;">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									<iframe src="/assets/MappedVideo.html" style="width: 100%;height: 30vw;border: none;overflow: hidden;" allowfullscreen="true"></iframe>
+									<p>A clean, open source HTML5 player.</p>
+									<div class="text-center">
+										<a href="//github.com/matthewaptaylor/MappedVideo" class="btn btn-outline-primary btn-sm">GitHub Page</a>
+										<br /><br />
+										<a class="github-button" href="//github.com/matthewaptaylor/MappedVideo/subscription" data-icon="octicon-eye" data-style="mega" data-show-count="true" aria-label="Watch matthewaptaylor/MappedVideo on GitHub">Watch</a>
+										<a class="github-button" href="//github.com/matthewaptaylor/MappedVideo" data-icon="octicon-star" data-style="mega" data-show-count="true" aria-label="Star matthewaptaylor/MappedVideo on GitHub">Star</a>
+										<a class="github-button" href="//github.com/matthewaptaylor/MappedVideo/fork" data-icon="octicon-repo-forked" data-style="mega" data-show-count="true" aria-label="Fork matthewaptaylor/MappedVideo on GitHub">Fork</a>
+										<a class="github-button" href="//github.com/matthewaptaylor/MappedVideo/issues" data-icon="octicon-issue-opened" data-style="mega" data-show-count="true" aria-label="Issue matthewaptaylor/MappedVideo on GitHub">Issue</a>
+										<a class="github-button" href="//github.com/matthewaptaylor/MappedVideo/archive/master.zip" data-icon="octicon-cloud-download" data-style="mega" aria-label="Download matthewaptaylor/MappedVideo on GitHub">Download</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card" style="width:318px;margin:10px;">
+						<img class="card-img-top" src="/assets/img/PythonChat.png" alt="Python chat screenshot">
+						<div class="card-body">
+							<h4 class="card-title">Python Chat</h4>
+							<p class="card-text">A simple one-way chat for python.</p>
+							<div class="btn-group-vertical btn-block">
+								<a href="#" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#pro2Modal">View Project</a>
+								<a href="//github.com/matthewaptaylor/Python-Chat" class="btn btn-outline-primary btn-sm">Github page</a>
+							</div>
+						</div>
+					</div>
+					<div id="pro2Modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="pro2ModalLabel" aria-hidden="true">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="pro2ModalLabel">Python Chat</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true" style="cursor:pointer;">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									<img class="card-img-top" src="/assets/img/PythonChat.png" alt="Python chat screenshot">
+									<br><br>
+									<p>A simple one-way chat for python.</p>
+									<div class="text-center">
+										<a href="//github.com/matthewaptaylor/MappedVideo" class="btn btn-outline-primary btn-sm">GitHub Page</a>
+										<br /><br />
+										<a class="github-button" href="//github.com/matthewaptaylor/Python-Chat/subscription" data-icon="octicon-eye" data-style="mega" data-show-count="true" aria-label="Watch matthewaptaylor/MappedVideo on GitHub">Watch</a>
+										<a class="github-button" href="//github.com/matthewaptaylor/Python-Chat" data-icon="octicon-star" data-style="mega" data-show-count="true" aria-label="Star matthewaptaylor/MappedVideo on GitHub">Star</a>
+										<a class="github-button" href="//github.com/matthewaptaylor/Python-Chat/fork" data-icon="octicon-repo-forked" data-style="mega" data-show-count="true" aria-label="Fork matthewaptaylor/MappedVideo on GitHub">Fork</a>
+										<a class="github-button" href="//github.com/matthewaptaylor/Python-Chat/issues" data-icon="octicon-issue-opened" data-style="mega" data-show-count="true" aria-label="Issue matthewaptaylor/MappedVideo on GitHub">Issue</a>
+										<a class="github-button" href="//github.com/matthewaptaylor/Python-Chat/archive/master.zip" data-icon="octicon-cloud-download" data-style="mega" aria-label="Download matthewaptaylor/MappedVideo on GitHub">Download</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card" style="width:318px;margin:10px;">
+						<img class="card-img-top" src="/assets/img/Kiwio.png" alt="Kiwio screenshot">
+						<div class="card-body">
+							<h4 class="card-title">Kiwio Agar</h4>
+							<p class="card-text">A game popular at school.</p>
+							<div class="btn-group-vertical btn-block">
+								<a href="//kiwio.ga" class="btn btn-primary btn-sm">Project Website</a>
+								<a href="//github.com/matthewaptaylor/Kiwio-Agar" class="btn btn-outline-primary btn-sm">Github page</a>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<div class="container-fluid bg-inverse text-white">
-		<div class="row" style="padding: 12px;margin-top: 20px;">
+		<div class="row bg-light" id="about">
 			<div class="col">
-				<em>&copy; Matthew Taylor, 2017</em>
+				<div class="container">
+					<div class="card" style="margin:10px;">
+						<div class="card-body">
+							<h4 class="card-title">About</h4>
+							<p class="card-text">Hi, I'm Matthew.</p>
+							<p class="card-text">I'm 14 and and can write in HTML, CSS & Python. I'm also learning JavaScript, PHP and SQL.</p>
+							<p class="card-text">This site showcases all of my projcts. You can use them, if you want. Just credit me.</p>
+						</div>
+					</div>
+				</div>
 			</div>
-			<div class="col text-left">
-				<a href="//v4-alpha.getbootstrap.com" class="pull-right"><div style="color:#ffffff;font-size:16px;display:inline-block;">Made with&nbsp;&nbsp;</div><div style="background-color:#563d7c;color:#ffffff;border-radius:5px;width:22px;font-size:16px;display:inline-block;text-align:center;">B</div><div style="color:#563d7c;font-size:16px;display:inline-block;">&nbsp;Bootstrap</div></a>
+		</div>
+		<div class="row bg-secondary">
+			<div class="col">
+			<nav class="navbar navbar-dark bg-secondary">
+				<span class="navbar-text text-white">
+					&copy; Matthew Taylor, 2017
+				</span>
+				<a class="navbar-brand" href="#">
+					<a href="//getbootstrap.com"><div style="color:#ffffff;font-size:16px;display:inline-block;">Made with&nbsp;&nbsp;</div><div style="background-color:#563d7c;color:#ffffff;border-radius:5px;width:22px;font-size:16px;display:inline-block;text-align:center;">B</div><div style="color:#563d7c;font-size:16px;display:inline-block;">&nbsp;Bootstrap</div></a>
+				</a>
+			</nav>
 			</div>
 		</div>
 	</div>
 	<script async defer src="//buttons.github.io/buttons.js"></script>
-	<script src="//code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+	<script src="/assets/jquery-3.1.1.slim.min.js"></script>
+	<script src="/assets/popper-1.11.min.js"></script>
+	<script src="/assets/bootstrap-4.0.0-beta-dist/js/bootstrap.min.js"></script>
 </body>
 </html>
