@@ -92,6 +92,7 @@ body {
 	margin: auto;
 	top: calc(50vh - 6.75rem);
 	left: calc(50vw - 9rem);
+	left: calc(50% - 8rem);
 	box-shadow: 0 0 5rem 0 rgba(207, 143, 99, 1);
 }
 #name:after {
