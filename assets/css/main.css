@@ -122,6 +122,7 @@ body {
 .content {
 	position: absolute;
 	top: calc(100vh - 4rem - 1px);
+	width: 100%;
 }
 #coverContent{
 	box-shadow: 0px 1rem 1rem 1rem rgba(0,0,0,0.75);
